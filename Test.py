@@ -50,7 +50,7 @@ def persist_stats(elements, timestamp):
                 previous_cpu = current_cpu
                 previous_timestamp = current_timestamp
             else:
-                cpu_delta = float(current_cpu - previous_cpu) 
+                cpu_delta = float(current_cpu - previous_cpu)
                 cpu_usage = float(cpu_delta / get_interval(current_timestamp, previous_timestamp))
                 cpu_percentage = (cpu_usage / cpu_cores * 100)
 

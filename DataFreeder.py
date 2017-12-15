@@ -47,7 +47,7 @@ def main():
 
         last_time_stamp = datetime.now()
 
-        sleep(60)
+        sleep(30)
 
 
 if __name__ == '__main__':
