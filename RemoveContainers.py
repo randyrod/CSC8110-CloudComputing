@@ -2,6 +2,8 @@ import docker
 
 client = docker.from_env()
 
+client.swarm.init()
+
 print "Services:\n"
 for service in client.services.list():
     service.remove()
